@@ -47,21 +47,29 @@
 
 
 /* Menu burger */
+
+
+/* Sidenav menu */
 .sidenav {
     height: 100%;
     width: 250px;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: -250px;
     background-color: #e8e8e8;
-    padding-top: 60px;
     transition: left 0.5s ease;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+    padding-top: 80px;
 }
 
 /* Sidenav menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 6% 0 6% 15px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -86,17 +94,21 @@
 
 /* Close btn */
 .sidenav .close {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
+    top: 20px;
+    left: 30px;
+    font-size: 45px;
 }
 
 /* Icône burger */
-.burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+.burger-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
+.burger-icon img {
+    width: 50px;
+}
+
