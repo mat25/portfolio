@@ -1,14 +1,37 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     /* background-color: #141416; */
 }
 
 .container{
-
+    width: 100%;
+    height: 100vh;
+    color: white;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.scroll {
+    scroll-snap-align: center;
+    height: 100vh;
 }
 
 .bienvenue {
-    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .presentation {
-    height: 100vh;
+    background-color: red;
+}
+.passion {
+    background-color: gray;
+}
+.projet {
+    background-color: brown;
+}
+.contact{
+    background-color: green;
 }
