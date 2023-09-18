@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     /* background-color: #141416; */
 }
 
@@ -14,24 +15,88 @@
 }
 .scroll {
     scroll-snap-align: center;
-    height: 100vh;
 }
 
 .bienvenue {
-    background-color: black;
+    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .presentation {
     background-color: red;
+    height: 100vh;
 }
 .passion {
     background-color: gray;
+    height: 100vh;
+}
+.cv {
+    background-color: green;
+    height: 100vh;
 }
 .projet {
     background-color: brown;
+    height: 100vh;
 }
 .contact{
     background-color: green;
+    height: 100vh;
+}
+
+
+/* Menu burger */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
