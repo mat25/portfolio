@@ -26,10 +26,16 @@
     z-index: 15;
 }
 
+.accueil .texte-presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
 
 
+/*  Header  */
 .header {
     background-color: var(--bleu_fonce);
     width: 100%;

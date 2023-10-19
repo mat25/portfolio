@@ -27,6 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
   <component name="ProjectId" id="2VyLG7Z52rAStq8YG18YUam4Pdu" />
   <component name="ProjectViewState">
@@ -69,7 +72,9 @@
       <workItem from="1696507816790" duration="597000" />
       <workItem from="1696579826460" duration="4000" />
       <workItem from="1697617222661" duration="2910000" />
-      <workItem from="1697620160653" duration="2528000" />
+      <workItem from="1697620160653" duration="2620000" />
+      <workItem from="1697630333296" duration="4000" />
+      <workItem from="1697713836666" duration="1375000" />
     </task>
     <servers />
   </component>
