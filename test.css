@@ -32,6 +32,11 @@
     justify-content: center;
 }
 
+.accueil .fleche-accueil {
+    position: fixed;
+    top: 90%;
+    right: 50%;
+}
 
 
 
