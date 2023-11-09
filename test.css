@@ -16,20 +16,27 @@
     color: white;
 }
 
-.section {
-    text-align: center;
-    padding: 50px;
-}
+
 
 .navigation {
     position: fixed;
     z-index: 15;
 }
 
+.accueil h1 {
+    text-align: center;
+}
+
 .accueil .texte-presentation {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+}
+
+.accueil .texte-presentation img {
+    width: 250px ;
+    height: 250px ;
+    margin: 0 40px;
 }
 
 .accueil .fleche-accueil {
