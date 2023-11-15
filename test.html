@@ -28,7 +28,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </div>
-                <div class="header__nav__menu">
+                <div class="header__nav__menu" onclick="closeMenuMobile()">
                     <div class="header__nav__menu__link">
                         <a href="#accueil">Accueil</a>
                     </div>
@@ -86,7 +86,37 @@
         </div>
         <div class="section">
             <div class="CV">
-                <embed src="pdf/CV-Matéo-Jean.pdf" width="80%" height="800px" type="application/pdf"/>
+                <div class="experience-competences">
+                    <div class="experience-professionnel">
+                        <h2>Expériences professionels</h2>
+                        <div class="cetraInformatique">
+                            <h4>Cetra Informatique</h4>
+                            <p>ALTERNANCE DURANT MA DEUXIEME ANNEES (2023-2024) DE BTS SIO</p>
+                            <ul>
+                                <li>Développement logiciel sur windev</li>
+                            </ul>
+                        </div>
+                        <div class="koredge">
+                            <h4>Koredge</h4>
+                            <p>STAGE EN ENTREPRISE DE 4 SEMAINES EN JUIN 2023</p>
+                            <ul>
+                                <li>Intégration de contenu HTML, CSS avec formulaire PHP</li>
+                                <li>Intégration de contenu et mise à jour de site WordPress</li>
+                            </ul>
+                        </div>
+                        <div class="Mmicro">
+                            <h4>Mmicro</h4>
+                            <p>STAGE DÉCOUVERTE D'UNE SEMAINE EN JUIN 2019</p>
+                            <ul>
+                                <li>Observer la maintenance d'un parc informatique</li>
+                                <li>Aider à la réparation des ordinateurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="competences">
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section">
@@ -144,7 +174,6 @@
             navigationTooltips: ['Accueil','Présentation','CV','Projet','Contact'],
             showActiveTooltip:false,
             slidesNavigation:true,
-
         })
     </script>
 </body>
