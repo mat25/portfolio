@@ -74,8 +74,15 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 
 /* Style Page CV */
 .CV {
-    margin-top: 90px;
+    margin: 130px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: 18% 41% 41%;
 }
+.CV .column-gauche img  {
+    width: 80%;
+}
+
+
 
 /*  Header  */
 .header {
