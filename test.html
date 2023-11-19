@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="portfolio%202/portfolio2/css/test.css">
     <script src="js/menu-burger-test.js"></script>
     <title>Document</title>
 </head>
@@ -28,7 +28,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </div>
-                <div class="header__nav__menu">
+                <div class="header__nav__menu" onclick="closeMenuMobile()">
                     <div class="header__nav__menu__link">
                         <a href="#accueil">Accueil</a>
                     </div>
@@ -86,8 +86,64 @@
         </div>
         <div class="section">
             <div class="CV">
-                <embed src="pdf/CV-Matéo-Jean.pdf" width="80%" height="800px" type="application/pdf"/>
+                <div class="column-gauche">
+                    <img src="images/photo-profil.jpg" alt="photo de profil">
+                    <div class="coordonnees">
+                        <p>logo : 10, chemin de chenecey, 25660 montrond le chateau</p>
+                        <p>mateojean25660@gmail.com</p>
+                        <p>07 69 74 56 10</p>
+                        <p>Titulaire du permis B</p>
+                    </div>
+                </div>
+                <div class="column-milieu">
+                    <div class="experience-professionnel">
+                        <h2>Expériences professionels</h2>
+                        <div class="cetraInformatique">
+                            <h4>Cetra Informatique</h4>
+                            <p>ALTERNANCE DURANT MA DEUXIEME ANNEES (2023-2024) DE BTS SIO</p>
+                            <ul>
+                                <li>Développement logiciel sur windev</li>
+                            </ul>
+                        </div>
+                        <div class="koredge">
+                            <h4>Koredge</h4>
+                            <p>STAGE EN ENTREPRISE DE 4 SEMAINES EN JUIN 2023</p>
+                            <ul>
+                                <li>Intégration de contenu HTML, CSS avec formulaire PHP</li>
+                                <li>Intégration de contenu et mise à jour de site WordPress</li>
+                            </ul>
+                        </div>
+                        <div class="Mmicro">
+                            <h4>Mmicro</h4>
+                            <p>STAGE DÉCOUVERTE D'UNE SEMAINE EN JUIN 2019</p>
+                            <ul>
+                                <li>Observer la maintenance d'un parc informatique</li>
+                                <li>Aider à la réparation des ordinateurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="colum-droite">
+                    <div class="competences">
+                        <h2>Compétences</h2>
+                        <div class="competence">
+                            <h4>Compétence</h4>
+                            <ul>
+                                <li>Organisé</li>
+                                <li>Esprit d'équipe et travail en autonomie</li>
+                                <li>Capable de m’adapter aux différentes circonstances</li>
+                            </ul>
+                        </div>
+                        <div class="competenceProfessionnel">
+                            <h4>Compétences informatiques </h4>
+                            <ul>
+                                <li>Python, PHP, HTML, CSS</li>
+                                <li>MySQL, SQL Server</li>
+                            </ul>
+                        </div>
+                </div>
             </div>
+        </div>
         </div>
         <div class="section">
             <div class="project">
@@ -144,7 +200,6 @@
             navigationTooltips: ['Accueil','Présentation','CV','Projet','Contact'],
             showActiveTooltip:false,
             slidesNavigation:true,
-
         })
     </script>
 </body>

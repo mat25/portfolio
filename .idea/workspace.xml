@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ce53a1e5-77eb-4cfd-9db4-edc1b851edb0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio 2/portfolio2/css/test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+>>>>>>> ff7b6e03ef1685c8533706748e26fc0f3ae43d03
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +39,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -47,8 +53,27 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "http.proxy",
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gobre/Documents&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> ff7b6e03ef1685c8533706748e26fc0f3ae43d03
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jeanm\Documents\portfolio\portfolio\portfolio 2\portfolio2\css" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\jeanm\AppData\Roaming\Subversion</configuration>
@@ -79,8 +104,17 @@
       <workItem from="1699258068020" duration="789000" />
       <workItem from="1699435394752" duration="2424000" />
       <workItem from="1699438758996" duration="1231000" />
+<<<<<<< HEAD
       <workItem from="1699531442462" duration="2957000" />
       <workItem from="1699711606266" duration="623000" />
+=======
+      <workItem from="1699531442462" duration="3282000" />
+      <workItem from="1699862477874" duration="68000" />
+      <workItem from="1699879914996" duration="666000" />
+      <workItem from="1700050289530" duration="2348000" />
+      <workItem from="1700053286667" duration="34000" />
+      <workItem from="1700136266725" duration="2321000" />
+>>>>>>> ff7b6e03ef1685c8533706748e26fc0f3ae43d03
     </task>
     <servers />
   </component>
