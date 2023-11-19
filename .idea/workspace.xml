@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce53a1e5-77eb-4cfd-9db4-edc1b851edb0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/gobre/Documents",
@@ -81,6 +80,7 @@
       <workItem from="1699435394752" duration="2424000" />
       <workItem from="1699438758996" duration="1231000" />
       <workItem from="1699531442462" duration="2957000" />
+      <workItem from="1699711606266" duration="623000" />
     </task>
     <servers />
   </component>
