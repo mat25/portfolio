@@ -82,7 +82,26 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     width: 80%;
 }
 
+/* Style Page Projets */
+.project {
+    width: 90%;
+    margin: 0 auto;
+}
+.project h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+
+.accordion {
+    --bs-accordion-bg: #222222;
+    --bs-accordion-border-color : #222222;
+    --bs-accordion-btn-color : white;
+    color: white;
+}
+.accordion-item {
+    background-color: green;
+}
 
 /*  Header  */
 .header {
@@ -105,6 +124,7 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     justify-content: space-between;
     padding: 0px 20px;
 }
+
 .header__logo img {
     max-height: 50px;
     padding-right: 80px;
@@ -165,6 +185,8 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 .header__nav__close {
     display: none;
 }
+
+
 
 
 
