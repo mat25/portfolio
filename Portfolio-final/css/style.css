@@ -23,9 +23,8 @@
     z-index: 15;
 }
 
+/* Annimation logo navigation*/
 svg .blinkit {animation: col 1.5s linear infinite;}
-
-
 @keyframes col {
     0%,2% {fill:none}
     3% {fill:white}
@@ -48,29 +47,35 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 }
 
 /* Style Page presentation */
-.presentation {
-    margin: 0 50px;
-}
-.presentation h1 {
-    text-align: center;
-}
 
-.presentation .texte-presentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
+/*.presentation {*/
+/*    border: white 2px solid;*/
+/*    width: 80%;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.presentation h1 {*/
+/*    text-align: center;*/
+/*}*/
 
-.presentation .texte-presentation img {
-    width: 210px ;
-    height: 210px ;
-    margin: 0 40px;
-}
+/*.flex-presentation {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: left;*/
+/*}*/
 
-.presentation .passions img {
-    margin-left: 50px;
-    height: 300px;
-}
+/*.flex-presentation img {*/
+/*    width: 210px ;*/
+/*    height: 210px ;*/
+/*}*/
+
+/*.passions h1 {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.passions img {*/
+/*    margin-left: 50px;*/
+/*    height: 300px;*/
+/*}*/
 
 /* Style Page CV */
 .CV {
