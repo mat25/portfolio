@@ -17,6 +17,8 @@
 }
 
 
+
+
 /* Navigation */
 .navigation {
     position: fixed;
@@ -47,35 +49,50 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 }
 
 /* Style Page presentation */
+.page-presentation {
+    width: 70%;
+    margin: 0 auto;
+}
+.page-presentation p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #999;
+}
+.page-presentation h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+.page-presentation h3 {
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 1%;
+}
 
-/*.presentation {*/
-/*    border: white 2px solid;*/
-/*    width: 80%;*/
-/*    margin: 0 auto;*/
-/*}*/
-/*.presentation h1 {*/
-/*    text-align: center;*/
-/*}*/
+.presentation p {
+    margin: 40px 0;
+}
 
-/*.flex-presentation {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: left;*/
-/*}*/
+.titre-passion h1 {
+    margin-bottom: 0;
+}
+.passions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.passions h3 {
+    text-align: center;
+}
 
-/*.flex-presentation img {*/
-/*    width: 210px ;*/
-/*    height: 210px ;*/
-/*}*/
 
-/*.passions h1 {*/
-/*    text-align: center;*/
-/*}*/
-
-/*.passions img {*/
-/*    margin-left: 50px;*/
-/*    height: 300px;*/
-/*}*/
+.passions img {
+    display: block;
+    margin: 0 auto 10px auto;
+    height: 32vh;
+}
 
 /* Style Page CV */
 .CV {
