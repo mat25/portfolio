@@ -203,7 +203,7 @@ svg .blinkit {animation: col 1.5s linear infinite;}
         z-index: 20;
         top: 0;
         right: 0;
-        width: 300px;
+        width: 350px;
         height: 100vh;
         background-color: var(--bleu_fonce);
         display: flex;
