@@ -94,16 +94,24 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     height: 32vh;
 }
 
-/* Style Page CV */
+
+/*  Page CV  */
+.page-cv h3 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
 .page-cv {
-    width: 80%;
-    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
 }
-
-.CV .column-gauche img  {
-    width: 5%;
+.page-cv li {
+    color: #999;
+    font-family: IBM Plex Mono, monospace;
 }
-
+.page-cv .contenu-col-gauche p {
+    color: #999;
+    font-family: IBM Plex Mono, monospace;
+}
 
 
 /*  Header  */

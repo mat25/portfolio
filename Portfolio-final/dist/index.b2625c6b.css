@@ -102,13 +102,19 @@ svg .blinkit {
   display: block;
 }
 
-.page-cv {
-  width: 80%;
-  margin: 0 auto;
+.page-cv h3 {
+  text-align: center;
+  font-family: Roboto Mono, monospace;
+  font-weight: bold;
 }
 
-.CV .column-gauche img {
-  width: 5%;
+.page-cv {
+  font-family: Roboto Mono, monospace;
+}
+
+.page-cv li, .page-cv .contenu-col-gauche p {
+  color: #999;
+  font-family: IBM Plex Mono, monospace;
 }
 
 .header {
