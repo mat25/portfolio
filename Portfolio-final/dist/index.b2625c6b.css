@@ -16,6 +16,11 @@
   padding: 0;
 }
 
+h1 {
+  font-family: Roboto Mono, monospace;
+  font-weight: bold;
+}
+
 .navigation {
   z-index: 15;
   position: fixed;
@@ -115,6 +120,15 @@ svg .blinkit {
 .page-cv li, .page-cv .contenu-col-gauche p {
   color: #999;
   font-family: IBM Plex Mono, monospace;
+}
+
+.page-cv a {
+  color: #999;
+  text-decoration: none;
+}
+
+.page-cv a:hover {
+  color: #fff;
 }
 
 .header {

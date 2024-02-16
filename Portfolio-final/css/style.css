@@ -16,7 +16,10 @@
     color: white;
 }
 
-
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
 
 
 /* Navigation */
@@ -111,6 +114,13 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 .page-cv .contenu-col-gauche p {
     color: #999;
     font-family: IBM Plex Mono, monospace;
+}
+.page-cv a {
+    text-decoration: none;
+    color: #999;
+}
+.page-cv a:hover {
+    color: white;
 }
 
 
