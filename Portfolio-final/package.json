@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-final",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build --dist-dir public --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}

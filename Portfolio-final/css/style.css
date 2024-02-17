@@ -16,7 +16,10 @@
     color: white;
 }
 
-
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
 
 
 /* Navigation */
@@ -94,16 +97,31 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     height: 32vh;
 }
 
-/* Style Page CV */
-.CV {
-    margin: 130px 50px 50px 50px;
-    display: grid;
-    grid-template-columns: 18% 41% 41%;
-}
-.CV .column-gauche img  {
-    width: 80%;
-}
 
+/*  Page CV  */
+.page-cv h3 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+.page-cv {
+    font-family: 'Roboto Mono', monospace;
+}
+.page-cv li {
+    color: #999;
+    font-family: IBM Plex Mono, monospace;
+}
+.page-cv .contenu-col-gauche p {
+    color: #999;
+    font-family: IBM Plex Mono, monospace;
+}
+.page-cv a {
+    text-decoration: none;
+    color: #999;
+}
+.page-cv a:hover {
+    color: white;
+}
 
 
 /*  Header  */
@@ -203,7 +221,7 @@ svg .blinkit {animation: col 1.5s linear infinite;}
         z-index: 20;
         top: 0;
         right: 0;
-        width: 300px;
+        width: 350px;
         height: 100vh;
         background-color: var(--bleu_fonce);
         display: flex;
