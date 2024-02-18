@@ -15,6 +15,9 @@
     background-color: #171717;
     color: white;
 }
+body {
+    background-color: #171717;
+}
 
 h1 {
     font-family: 'Roboto Mono', monospace;
@@ -206,6 +209,18 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     display: none;
 }
 
+
+/*  Détails des projets  */
+.details-projet {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+}
+.fleche-gauche {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
 
 
 @media screen and (max-width: 924px) {
