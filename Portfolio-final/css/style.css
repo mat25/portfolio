@@ -158,8 +158,11 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 .contact form {
     outline:  none;
 }
+.contact form label  {
+    font-weight: bold;
+}
+
 .contact form input  {
-    outline:  none;
     margin-bottom: 10px;
     background-color: #171717;
     border: none;
@@ -178,12 +181,23 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     border-bottom: #999 1px solid  ;
 }
 .contact form textarea  {
+    background-color: #171717;
+    border: none;
+    border-radius: 0;
+    border-bottom: #999 1px solid  ;
+    color: white;
+    font-family: IBM Plex Mono, monospace;
+}
+.contact form textarea:focus  {
     outline:  none;
+    color: white;
+    margin-bottom: 10px;
     background-color: #171717;
     border: none;
     border-radius: 0;
     border-bottom: #999 1px solid  ;
 }
+
 
 /*  Header  */
 .header {

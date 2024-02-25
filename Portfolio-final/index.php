@@ -311,7 +311,7 @@
                             <img src="images/ski.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Best Students</h5>
-                                <a href="./partials/Projet-BestStudent.html" class="btn btn-secondary">Voir plus</a>
+                                <a href="Projets.php" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
@@ -321,19 +321,20 @@
         </div>
         <div class="section">
             <h1>Veille technologique</h1>
-            <p>Contenu section 4  </p>
+            <p>En construction </p>
         </div>
         <div class="section">
             <div class="contact">
+                <h1 class="text-center mb-4">Contactez moi</h1>
                 <div class="row">
                     <form class="col col-8">
                         <div class="row">
                             <div class="col">
-                                <label for="inputNom" class="form-label">Nom</label>
+                                <label for="inputNom" class="form-label text">Nom</label>
                                 <input type="text" class="form-control" id="inputNom">
                             </div>
                             <div class="col">
-                                <label for="inputPrenom" class="form-label">Prenom</label>
+                                <label for="inputPrenom" class="form-label">Prénom</label>
                                 <input type="text" class="form-control" id="inputPrenom">
                             </div>
                         </div>
@@ -417,5 +418,7 @@
             document.querySelector('.header__nav').classList.remove('open');
         }
     </script>
+
+
 </body>
 </html>
