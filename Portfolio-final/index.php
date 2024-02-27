@@ -284,7 +284,7 @@
                             <img src="images/ski.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Stats caisse</h5>
-                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                                <a href="Projets.php?id=Statistique-caisse" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
@@ -293,7 +293,7 @@
                             <img src="images/ski.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Projet cinéma</h5>
-                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                                <a href="Projets.php?id=Projet-cinema" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
@@ -301,8 +301,8 @@
                         <div class="card my-3 mx-auto" style="width: 18rem;">
                             <img src="images/ski.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Landings Page</h5>
-                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                                <h5 class="card-title">Portfolio</h5>
+                                <a href="Projets.php?id=Portfolio" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
@@ -311,7 +311,7 @@
                             <img src="images/ski.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Best Students</h5>
-                                <a href="Projets.php" class="btn btn-secondary">Voir plus</a>
+                                <a href="Projets.php?id=BestStudents" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>

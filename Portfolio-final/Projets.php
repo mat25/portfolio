@@ -28,8 +28,26 @@ $tabProjet["Statistique-caisse"] = [
     "images" => [],
     "publie" => false,
     "logoLanguage" => ["html","css","php","javascript","bootstrap","mysql","symfony"]
-]
+];
 
+if (!empty($_GET["id"])) {
+    // Le parametre existe
+    $id=$_GET["id"];
+
+    // test si le parametre est bien une clé du tableau
+    $trouver = false;
+    foreach ($tabProjet as $cle => $projet) {
+        if ($cle == $id) {
+            $trouver = true;
+        }
+    }
+    if (!$trouver) {
+        $erreur = "L'URL n'est pas valide !";
+    }
+} else {
+    // Le paramettre n'existe pas ou ets vide
+    $erreur = "L'URL n'est pas valide !";
+}
 ?>
 
 <!DOCTYPE html>
@@ -107,15 +125,20 @@ $tabProjet["Statistique-caisse"] = [
     </a>
 </div>
 <div class="details-projet d-flex justify-content-center align-items-center">
+    <?php
+    if (!empty($erreur)) { ?>
+        <h1><?=$erreur ?></h1>
+    <?php } else { ?>
     <div class="row">
         <div class="col">
-            <h1>Titre du projet</h1>
-            <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt earum est hic modi mollitia nisi perferendis quod unde voluptatibus.</p>
+            <h1><?= $tabProjet[$id]["titre"]?></h1>
+            <p><?= $tabProjet[$id]["description"]?></p>
         </div>
         <div class="col">
             <p>Immage du projet</p>
         </div>
     </div>
+    <?php } ?>
 </div>
 
 <script>
