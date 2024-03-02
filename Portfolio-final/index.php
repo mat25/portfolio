@@ -277,7 +277,7 @@
         </div>
         <div class="section">
             <div class="project w-75 mx-auto">
-                <h1 class="text-center">projets</h1>
+                <h1 class="text-center">Projets</h1>
                 <div class="row">
                     <div class="col">
                         <div class="card my-3 mx-auto" style="width: 18rem;">

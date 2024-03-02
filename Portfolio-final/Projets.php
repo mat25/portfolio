@@ -3,31 +3,34 @@ $tabProjet = [];
 $tabProjet["BestStudents"] = [
         "titre" => "Best Students",
         "annee" => "2022",
-        "description" => "BestStudents est un projet crée au cours de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-        "images" => [],
+        "description" => "BestStudents est un projet crée au cours de ma première année de BTS. <br> Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
+        "images" => ["ski.png","ski.png","ski.png"],
         "publie" => false,
-        "logoLanguage" => ["html","css","php","mysql"]
+        "logoLanguage" => ["html5","css3","php","mysql"]
 ];
 $tabProjet["Portfolio"] = [
     "titre" => "Portfolio",
-    "description" => "BestStudents est un projet crée au cours de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "images" => [],
+    "annee" => "2023-2024",
+    "description" => "Mon portfolio est un projet crée au cours de ma deuxieme année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
+    "images" => ["ski.png","ski.png","ski.png"],
     "publie" => "https://mateo-jean.fr/",
-    "logoLanguage" => ["html","css","php","javascript","bootstrap"]
+    "logoLanguage" => ["html5","css3","php","javascript","bootstrap"]
 ];
 $tabProjet["Projet-cinema"] = [
     "titre" => "Projet cinéma",
+    "annee" => "2023-2024",
     "description" => "BestStudents est un projet crée au cours de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "images" => [],
+    "images" => ["ski.png","ski.png","ski.png"],
     "publie" => false,
-    "logoLanguage" => ["html","css","php","javascript","bootstrap","mysql","symfony"]
+    "logoLanguage" => ["html5","css3","php","bootstrap","mysql","symfony"]
 ];
 $tabProjet["Statistique-caisse"] = [
     "titre" => "Statistique caisse",
-    "description" => "BestStudents est un projet crée au cours de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "images" => [],
+    "annee" => "2023-2024",
+    "description" => "Lors de ma deuxieme année de BTS-SIO, j'ai réaliser un projets de statistique de caisse. <br> Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
+    "images" => ["ski.png","ski.png","ski.png"],
     "publie" => false,
-    "logoLanguage" => ["html","css","php","javascript","bootstrap","mysql","symfony"]
+    "logoLanguage" => ["windev","hfsql"]
 ];
 
 if (!empty($_GET["id"])) {
@@ -130,12 +133,76 @@ if (!empty($_GET["id"])) {
         <h1><?=$erreur ?></h1>
     <?php } else { ?>
     <div class="row">
-        <div class="col">
-            <h1><?= $tabProjet[$id]["titre"]?></h1>
-            <p><?= $tabProjet[$id]["description"]?></p>
+        <div class="col-5 d-flex flex-column flex justify-content-center">
+            <!-- titre -->
+            <h1 class="text-center mb-4"><?= $tabProjet[$id]["titre"]?></h1>
+
+            <!-- Date -->
+            <h4 class="mb-3">Projets réaliser en <?= $tabProjet[$id]["annee"]?></h4>
+
+            <!-- Description -->
+            <p class="pDetailsProjets"><?= $tabProjet[$id]["description"]?></p>
+
+            <!-- Projets publier-->
+            <?php
+            if ($tabProjet[$id]["publie"] != false) { ?>
+                <a class="LienProjets" href="<?=$tabProjet[$id]["publie"]?>">Lien du projets</a>
+            <?php } else { ?>
+                <h5>Projets non publier</h5>
+            <?php } ?>
+
+            <!-- Logo langage utilisé -->
+            <div class="row">
+                <h4 class="text-center mt-4 mb-3">Technologie utilisé :</h4>
+                <?php
+                foreach ($tabProjet[$id]["logoLanguage"] as $image) {?>
+                    <div class="col d-flex justify-content-center">
+                        <img class="logoLangage" src="images/<?=$image?>.png" alt="">
+                    </div>
+                <?php } ?>
+            </div>
+
         </div>
-        <div class="col">
-            <p>Immage du projet</p>
+        <div class="col-7">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="recapImage carousel-indicators">
+                    <?php
+                    $compteur = 0;
+                    foreach ($tabProjet[$id]["images"] as $image) { ?>
+                        <img class="PetiteImage w-25 h-25 active" src="images/Projets/<?= $id?>/<?= $image?>" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?= $compteur?>" aria-current="true" aria-label="Slide <?= $compteur+1?>" alt="">
+                    <?php
+                        $compteur += 1;
+                    } ?>
+                </div>
+                <div class="carousel-inner">
+                    <?php
+                    $premiereImage = true;
+                    foreach ($tabProjet[$id]["images"] as $image) {
+                        if ($premiereImage) {
+                            $active = "active";
+                            $premiereImage = false;
+                        } else {
+                            $active = "";
+                        }
+                        ?>
+                        <div class="carousel-item <?= $active?>">
+                            <div class="test w-75 mx-auto ">
+                                <img src="images/Projets/<?= $id?>/<?= $image?>" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    <?php } ?>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </div>
     <?php } ?>
