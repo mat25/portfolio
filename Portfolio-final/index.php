@@ -378,19 +378,7 @@
 
     <!--  Script qui permet d'avoir les annimation avec le full Page  -->
     <script src="js/fullpagejs.js"></script>
-    <script>
-        new fullpage('#fullpage',{
-            // enleve l'erreur de la console
-            licenseKey: 'gplv3-license',
-            autoScrolling:true,
-            navigation:true,
-            lockAnchors: false,
-            anchors: ['accueil','presentation','CV','projet','veille-techno','contact'],
-            navigationTooltips: ['Accueil','Présentation','CV','Projet','Veille technologique','Contact'],
-            showActiveTooltip:false,
-            slidesNavigation:true,
-        })
-    </script>
+
 
     <script>
         // Sélectionnez tous les boutons d'accordéon
@@ -419,6 +407,51 @@
         }
     </script>
 
+    <script>
+        // Déclarer une variable pour suivre l'état d'initialisation de Fullpage
+        var isFullPageInitialized = false;
+
+        // Vérifie la largeur de la fenêtre lors du chargement initial de la page
+        window.addEventListener('load', function() {
+            checkWindowSize();
+        });
+
+        // Vérifie la largeur de la fenêtre lorsque la fenêtre est redimensionnée
+        window.addEventListener('resize', function() {
+            checkWindowSize();
+        });
+
+        function checkWindowSize() {
+            if (window.innerWidth < 1200) {
+                // Désactive fullpage.js si la largeur de la fenêtre est inférieure à 1200 px
+                if (typeof fullpage_api !== 'undefined' && isFullPageInitialized) {
+                    fullpage_api.destroy('all');
+                    isFullPageInitialized = false;
+                }
+            } else {
+                // Initialise fullpage.js si la largeur de la fenêtre est supérieure à 1200 px
+                if (!isFullPageInitialized) {
+                    initFullPage();
+                    isFullPageInitialized = true;
+                }
+            }
+        }
+
+        function initFullPage() {
+            // Initialise fullpage.js avec vos options
+            new fullpage('#fullpage',{
+                // enleve l'erreur de la console
+                licenseKey: 'gplv3-license',
+                autoScrolling:true,
+                navigation:true,
+                lockAnchors: false,
+                anchors: ['accueil','presentation','CV','projet','veille-techno','contact'],
+                navigationTooltips: ['Accueil','Présentation','CV','Projet','Veille technologique','Contact'],
+                showActiveTooltip:false,
+                slidesNavigation:true,
+            })
+        }
+    </script>
 
 </body>
 </html>
