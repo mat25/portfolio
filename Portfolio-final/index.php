@@ -1,3 +1,56 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $erreurs = [];
+
+    if (empty($_POST["nom"])) {
+        $erreurs["nom"] = "Le nom est obligatoire !";
+    } else {
+        $nom = $_POST["nom"];
+    }
+
+    if (empty($_POST["prenom"])) {
+        $erreurs["prenom"] = "Le prenom est obligatoire !";
+    } else {
+        $prenom = $_POST["prenom"];
+    }
+
+    if (empty($_POST["email"])) {
+        $erreurs["email"] = "L'email est obligatoire !";
+    } else {
+        $email = $_POST["email"];
+    }
+
+    if (empty($_POST["objet"])) {
+        $erreurs["objet"] = "L'objet est obligatoire !";
+    } else {
+        $objet = $_POST["objet"];
+    }
+
+    if (empty($_POST["message"])) {
+        $erreurs["message"] = "Le message est obligatoire !";
+    } else {
+        $message = $_POST["message"];
+    }
+
+    if (empty($erreurs)) {
+        $email = "mateojean25660@gmail.com";
+
+        $content = "De $prenom $nom \nEmail: $email \nMessage: $message";
+        $mailClient = "From: $email \r\n";
+        mail($email, "Portfolio : ".$objet, $content, $mailClient) or die($erreurs["EnvoieMail"] = "Erreur lors de l'envoie du mail");
+
+        // Si pas d'erreur
+        if (empty($erreurs)) {
+            header("Location: index.php");
+
+        }
+    }
+
+}
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -327,25 +380,32 @@
             <div class="contact">
                 <h1 class="text-center mb-4">Contactez moi</h1>
                 <div class="row">
-                    <form class="col col-8">
+                    <form class="col col-8" method="post">
                         <div class="row">
                             <div class="col">
-                                <label for="inputNom" class="form-label text">Nom</label>
-                                <input type="text" class="form-control" id="inputNom">
+                                <label for="inputNom" class="text d-block">Nom</label>
+                                <input type="text" class="w-100 mb-4 px-1" id="inputNom" name="nom">
+                                <?php if (!empty($erreurs["nom"])) { ?>
+                                    <p>Erreur</p>
+                                <?php } ?>
                             </div>
                             <div class="col">
-                                <label for="inputPrenom" class="form-label">Prénom</label>
-                                <input type="text" class="form-control" id="inputPrenom">
+                                <label for="inputPrenom" class="block">Prénom</label>
+                                <input type="text" class="w-100 mb-4 px-1" id="inputPrenom" name="prenom">
                             </div>
                         </div>
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="inputEmail">
+                        <label for="inputEmail" class="block">Email</label>
+                        <input type="text" class="w-100 mb-4 px-1" id="inputEmail" name="email">
 
-                        <label for="inputObjet" class="form-label">Objet</label>
-                        <input type="text" class="form-control" id="inputObjet">
+                        <label for="inputObjet" class="block">Objet</label>
+                        <input type="text" class="w-100 mb-4 px-1" id="inputObjet" name="objet">
 
-                        <label for="inputMessage" class="form-label">Message</label>
-                        <textarea type="text" class="form-control" id="inputMessage" rows="5"></textarea>
+                        <label for="inputMessage" class="block">Message</label>
+                        <textarea type="text" class="w-100 px-1" id="inputMessage" rows="5" name="message"></textarea>
+
+                        <div class="divbouton w-100 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-secondary mt-3 w-25" id="envoyer">Envoyer</button>
+                        </div>
                     </form>
                     <div class="col col-4 coordonnee">
                         <a href="">
