@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="section" >
             <div class="accueil">
                 <h1>Matéo JEAN <br> Développeur Back-End</h1>
-                <a href="#presentation"class="fleche-accueil">
+                <a href="#presentation"class="fleche-accueil" id="flecheScroll">
                     <i class="fa-solid fa-arrow-down fa-bounce fa-2xl" style="color: #ffffff;"></i>
                 </a>
             </div>
@@ -517,7 +517,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         });
 
         function checkWindowSize() {
+            var fleche = document.getElementById("flecheScroll");
             if (window.innerWidth < 1200) {
+                fleche.style.display = "none";
                 // Désactive fullpage.js si la largeur de la fenêtre est inférieure à 1200 px
                 if (typeof fullpage_api !== 'undefined' && isFullPageInitialized) {
                     var accueilElement = document.querySelector('[data-anchor="accueil"]');
@@ -537,6 +539,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             } else {
                 // Initialise fullpage.js si la largeur de la fenêtre est supérieure à 1200 px
+                fleche.style.display = "block";
                 if (!isFullPageInitialized) {
                     var accueil = document.getElementById("accueil");
                     if(accueil != null){
