@@ -29,6 +29,20 @@ h1 {
     position: fixed;
     z-index: 15;
 }
+/* Styles pour les écrans petits (<1200px) */
+@media screen and (max-width: 1200px) {
+    .large-screen {
+        display: none; /* Masquer le lien pour les grands écrans */
+    }
+}
+
+/* Styles pour les écrans grands (>1200px) */
+@media screen and (min-width: 1200px) {
+    .small-screen {
+        display: none; /* Masquer le lien pour les petits écrans */
+    }
+}
+
 
 /* Annimation logo navigation*/
 svg .blinkit {animation: col 1.5s linear infinite;}
@@ -40,6 +54,9 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 
 
 /* Style Page d'accueil */
+.presentation-small {
+    display: none;
+}
 .accueil {
     margin: 0 50px;
 }
@@ -309,7 +326,7 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 }
 
 
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 1200px) {
 
     .header__burger {
         display: block;
@@ -329,7 +346,7 @@ svg .blinkit {animation: col 1.5s linear infinite;}
         align-items: center;
         justify-content: center;
         display: none;
-        box-shadow: -10px  4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: -10px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .header__nav.open {
@@ -390,4 +407,17 @@ svg .blinkit {animation: col 1.5s linear infinite;}
         display: block;
     }
 
+
+    /*  Accueil  */
+    .accueil {
+        margin: 150px auto 100px auto;
+    }
+
+    /*  Présentation  */
+    .presentation-large {
+        display: none;
+    }
+    .presentation-small {
+        display: block;
+    }
 }

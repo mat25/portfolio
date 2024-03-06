@@ -88,19 +88,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="header__nav__menu" onclick="closeMenuMobile()">
                     <div class="header__nav__menu__link">
-                        <a href="#accueil">Accueil</a>
+                        <a href="#accueil" >Accueil</a>
                     </div>
                     <div class="header__nav__menu__link">
                         <a href="#presentation">Présentation</a>
                     </div>
                     <div class="header__nav__menu__link">
-                        <a href="#CV">CV</a>
+                        <a href="#CV" >CV</a>
                     </div>
                     <div class="header__nav__menu__link">
                         <a href="#projet">Projets</a>
                     </div>
                     <div class="header__nav__menu__link">
-                        <a href="#veille-techno">Veille technologique</a>
+                        <a href="#veille-techno" >Veille technologique</a>
                     </div>
                     <div class="header__nav__menu__link">
                         <a href="#contact">Contact</a>
@@ -126,8 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <!--    Page présentation    -->
-        <div class="section" >
-            <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="section"  >
+            <div id="carouselExampleIndicators" class="carousel slide presentation-large">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -158,8 +158,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </div>
                                 <div class="sportsMecanique">
                                     <h3>Sports Mécanique</h3>
-                                    <img src="images/FabioQuartararo.jpg" alt="Image ski">
-                                    <img src="images/DriftKenBlock.jpg" alt="Image Vélo">
+                                    <img src="images/FabioQuartararo.jpg" alt="Image Moto">
+                                    <img src="images/WRC-fourmaux.jpg" alt="Image WRC">
                                 </div>
                             </div>
                         </div>
@@ -175,6 +175,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+            <div class="presentation-small">
+                <div class="page-presentation">
+                    <div class="presentation">
+                        <h1>Présentation</h1>
+                        <div class="texte">
+                            <p>Je m'appelle Matéo j'ai 19 ans et je suis actuellement étudiant en 2eme années BTS SIO à Besançon. Passionné, par les nouvelles technologies depuis longtemps j'aimerais bien devenir développeur.</p>
+                            <p>Ce portfolio a pour but de vous présenter mes différents projets que j'ai pu réaliser, mais également mes certifications ou encore mon CV.</p>
+                            <p>Si vous avez une question ou si vous avez simplement besoin d'un renseignement, vous pouvez me contacter en cliquant ici.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-passion w-75 d-flex justify-content-center align-item-center flex-column mx-auto">
+                    <h1 class="text-center">Passions</h1>
+                    <div class="row">
+                        <div class="col col-6">
+                            <h3 class="text-center">Sports</h3>
+                            <img class="w-100" src="images/ski.png" alt="Image ski">
+                            <img class="w-100" src="images/vtt.jpg" alt="Image Vélo">
+                        </div>
+                        <div class=" col col-6">
+                            <h3 class="text-center">Sports Mécanique</h3>
+                            <img class="w-100" src="images/FabioQuartararo.jpg" alt="Image Moto">
+                            <img class="w-100" src="images/WRC-fourmaux.jpg" alt="Image WRC">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!--    Page CV    -->
         <div class="section">
@@ -328,7 +357,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" >
             <div class="project w-75 mx-auto">
                 <h1 class="text-center">Projets</h1>
                 <div class="row">
@@ -372,7 +401,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             </div>
         </div>
-        <div class="section">
+        <div class="section" >
             <h1>Veille technologique</h1>
             <p>En construction </p>
         </div>
@@ -408,14 +437,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                     </form>
                     <div class="col col-4 coordonnee">
-                        <a href="">
+                        <a href="tel:0769745610">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-outbound-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
                             </svg>
                             <br>
                             <p>07 69 74 56 10</p>
                         </a>
-                        <a href="">
+                        <a href="mailto:mateojean25660@gmail.com">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
                                 <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
                                 <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
@@ -423,7 +452,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <br>
                             <p>mateojean25660@gmail.com</p>
                         </a>
-                        <a href="">
+                        <a href="https://github.com/mat25" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/WhDDvcKQpuLvWBXNA" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
                                 <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
                             </svg>
@@ -485,12 +520,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (window.innerWidth < 1200) {
                 // Désactive fullpage.js si la largeur de la fenêtre est inférieure à 1200 px
                 if (typeof fullpage_api !== 'undefined' && isFullPageInitialized) {
+                    var accueilElement = document.querySelector('[data-anchor="accueil"]');
+                    var presentationElement = document.querySelector('[data-anchor="presentation"]');
+                    var cvElement = document.querySelector('[data-anchor="CV"]');
+                    var projetsElement = document.querySelector('[data-anchor="projet"]');
+                    var vtElement = document.querySelector('[data-anchor="veille-techno"]');
+                    var contactElement = document.querySelector('[data-anchor="contact"]');
                     fullpage_api.destroy('all');
                     isFullPageInitialized = false;
+                    accueilElement.id = "accueil";
+                    presentationElement.id = "presentation";
+                    cvElement.id = "CV";
+                    projetsElement.id = "projet";
+                    vtElement.id = "veille-techno";
+                    contactElement.id = "contact";
                 }
             } else {
                 // Initialise fullpage.js si la largeur de la fenêtre est supérieure à 1200 px
                 if (!isFullPageInitialized) {
+                    var accueil = document.getElementById("accueil");
+                    if(accueil != null){
+                        accueil.removeAttribute('id');
+                    }
+                    var presentation = document.getElementById("presentation");
+                    if(presentation != null){
+                        presentation.removeAttribute('id');
+                    }
+                    var cv = document.getElementById("CV");
+                    if(cv != null){
+                        cv.removeAttribute('id');
+                    }
+                    var projet = document.getElementById("projet");
+                    if(projet != null){
+                        projet.removeAttribute('id');
+                    }
+                    var vt = document.getElementById("veille-techno");
+                    if(vt != null){
+                        vt.removeAttribute('id');
+                    }
+                    var contact = document.getElementById("contact");
+                    if(contact != null){
+                        contact.removeAttribute('id');
+                    }
                     initFullPage();
                     isFullPageInitialized = true;
                 }
