@@ -133,9 +133,9 @@ if (!empty($_GET["id"])) {
         <h1><?=$erreur ?></h1>
     <?php } else { ?>
     <div class="row">
-        <div class="col-5 d-flex flex-column flex justify-content-center">
-            <!-- titre -->
-            <h1 class="text-center mb-4"><?= $tabProjet[$id]["titre"]?></h1>
+        <!-- titre -->
+        <h1 class="text-center mb-4"><?= $tabProjet[$id]["titre"]?></h1>
+        <div class="col col-12 col-xl-5 order-1 order-xl-0 d-flex flex-column flex justify-content-center colonneDivCarrousel">
 
             <!-- Date -->
             <h4 class="mb-3">Projets réaliser en <?= $tabProjet[$id]["annee"]?></h4>
@@ -163,7 +163,7 @@ if (!empty($_GET["id"])) {
             </div>
 
         </div>
-        <div class="col-7">
+        <div class="col col-12 col-xl-7 order-0 order-xl-1">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="recapImage carousel-indicators">
                     <?php
