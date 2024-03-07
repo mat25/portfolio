@@ -4,7 +4,7 @@ $tabProjet["BestStudents"] = [
         "titre" => "Best Students",
         "annee" => "2022",
         "description" => "BestStudents est un projet crée au cours de ma première année de BTS. <br> Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-        "images" => ["ski.png","ski.png","ski.png"],
+        "images" => ["BestStudent-ListeEtudiants.png","BestStudent-AjoutEtudiant.png","BestStudent-Contact.png","BestStudent-DetailEtudiant.png"],
         "publie" => false,
         "logoLanguage" => ["html5","css3","php","mysql"]
 ];
@@ -12,7 +12,7 @@ $tabProjet["Portfolio"] = [
     "titre" => "Portfolio",
     "annee" => "2023-2024",
     "description" => "Mon portfolio est un projet crée au cours de ma deuxieme année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "images" => ["ski.png","ski.png","ski.png"],
+    "images" => ["Portfolio-Presentation.png","Portfolio-Passions.png","Portfolio-Contact.png"],
     "publie" => "https://mateo-jean.fr/",
     "logoLanguage" => ["html5","css3","php","javascript","bootstrap"]
 ];
@@ -20,7 +20,7 @@ $tabProjet["Projet-cinema"] = [
     "titre" => "Projet cinéma",
     "annee" => "2023-2024",
     "description" => "BestStudents est un projet crée au cours de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "images" => ["ski.png","ski.png","ski.png"],
+    "images" => ["ProjetEnCours.png"],
     "publie" => false,
     "logoLanguage" => ["html5","css3","php","bootstrap","mysql","symfony"]
 ];
@@ -28,7 +28,7 @@ $tabProjet["Statistique-caisse"] = [
     "titre" => "Statistique caisse",
     "annee" => "2023-2024",
     "description" => "Lors de ma deuxieme année de BTS-SIO, j'ai réaliser un projets de statistique de caisse. <br> Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "images" => ["ski.png","ski.png","ski.png"],
+    "images" => ["ProjetEnCours.png"],
     "publie" => false,
     "logoLanguage" => ["windev","hfsql"]
 ];
@@ -121,10 +121,15 @@ if (!empty($_GET["id"])) {
 </header>
 
 <div class="fleche-gauche">
-    <a href="index.php#projet">
+    <a href="index.php#<?= $id?>" class="flecheSmallEcran">
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
     </svg>
+    </a>
+    <a href="index.php#projet" class="flecheBigEcran">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+        </svg>
     </a>
 </div>
 <div class="details-projet d-flex justify-content-center align-items-center">

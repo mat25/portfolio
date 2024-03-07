@@ -305,22 +305,30 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 
 /*  Détails des projets  */
 .details-projet {
-    height: 100vh;
+    min-height: 100vh;
     width: 90%;
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
+    padding-bottom: 100px;
 }
 .fleche-gauche {
     position: absolute;
     top: 100px;
     left: 20px;
 }
+.flecheSmallEcran {
+    display: none;
+}
+.flecheBigEcran {
+    display: block;
+}
+
 .pDetailsProjets
 {
     color: #999;
     font-family: IBM Plex Mono, monospace;
 }
 .recapImage {
-    bottom: -35%;
+    bottom: -40%;
 }
 .logoLangage {
     height: 70px;
@@ -443,5 +451,28 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     /*  Details projet  */
     .colonneDivCarrousel {
         margin-top: 200px;
+    }
+
+    /*  Details projets  */
+    .details-projet {
+        padding-top: 150px;
+    }
+    .flecheSmallEcran {
+        display: block;
+    }
+    .flecheBigEcran {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .recapImage {
+        bottom: -50%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .recapImage {
+        bottom: -60%;
     }
 }

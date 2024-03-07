@@ -363,36 +363,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="project-test w-75 mx-auto">
                 <h1 class="text-center">Projets</h1>
                 <div class="row">
-                    <div class="col">
+                    <div class="col" id="Statistique-caisse">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/ski.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/Statistique-caisse/ProjetEnCours.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Stats caisse</h5>
+                                <h5 class="card-title">Statistiques de caisse</h5>
                                 <a href="Projets.php?id=Statistique-caisse" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" id="Projet-cinema">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/ski.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/Projet-cinema/ProjetEnCours.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Projet cinéma</h5>
                                 <a href="Projets.php?id=Projet-cinema" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" id="Portfolio">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/ski.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/Portfolio/Portfolio-Presentation.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Portfolio</h5>
                                 <a href="Projets.php?id=Portfolio" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" id="BestStudents">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/ski.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/BestStudents/BestStudent-ListeEtudiants.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Best Students</h5>
                                 <a href="Projets.php?id=BestStudents" class="btn btn-secondary">Voir plus</a>
