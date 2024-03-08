@@ -28,7 +28,7 @@ $tabProjet["Statistique-caisse"] = [
     "titre" => "Statistique caisse",
     "annee" => "2023-2024",
     "description" => "Lors de ma deuxieme année de BTS-SIO, j'ai réaliser un projets de statistique de caisse. <br> Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "images" => ["ProjetEnCours.png"],
+    "images" => ["Statistique-caisse-CA.png","Statistique-caisse-poids-moyen.png","Statistique-caisse-preference.png"],
     "publie" => false,
     "logoLanguage" => ["windev","hfsql"]
 ];

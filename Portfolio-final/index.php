@@ -363,21 +363,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="project-test w-75 mx-auto">
                 <h1 class="text-center">Projets</h1>
                 <div class="row">
-                    <div class="col" id="Statistique-caisse">
-                        <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/Projets/Statistique-caisse/ProjetEnCours.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Statistiques de caisse</h5>
-                                <a href="Projets.php?id=Statistique-caisse" class="btn btn-secondary">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col" id="Projet-cinema">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
                             <img src="images/Projets/Projet-cinema/ProjetEnCours.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Projet cinéma</h5>
                                 <a href="Projets.php?id=Projet-cinema" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="Statistique-caisse">
+                        <div class="card my-3 mx-auto" style="width: 18rem;">
+                            <img src="images/Projets/Statistique-caisse/Statistique-caisse-CA.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Statistiques de caisse</h5>
+                                <a href="Projets.php?id=Statistique-caisse" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
