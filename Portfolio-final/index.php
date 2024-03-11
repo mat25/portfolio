@@ -212,7 +212,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="row justify-content-center align-items-center">
                     <div class="col col-12 col-md-6 col-xl-3 contenu-col-gauche pe-0">
                         <div class="imageCvDiv">
-                            <img class="rounded imageCV" src="images/photoCV.jpg" alt="photo de profil">
+                            <img class="rounded imageCV" src="images/photoCV.jpg" alt="Photo CV">
                         </div>
                         <div class="coordonnees">
                             <p class="mt-4"><a href="https://maps.app.goo.gl/WhDDvcKQpuLvWBXNA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -365,7 +365,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="row">
                     <div class="col" id="Projet-cinema">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/Projets/Projet-cinema/ProjetEnCours.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/Projet-cinema/ProjetEnCours.png" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Projet cinéma</h5>
                                 <a href="Projets.php?id=Projet-cinema" class="btn btn-secondary">Voir plus</a>
@@ -374,7 +374,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="col" id="Statistique-caisse">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/Projets/Statistique-caisse/Statistique-caisse-CA.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/Statistique-caisse/Statistique-caisse-CA.png" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Statistiques de caisse</h5>
                                 <a href="Projets.php?id=Statistique-caisse" class="btn btn-secondary">Voir plus</a>
@@ -383,7 +383,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="col" id="Portfolio">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/Projets/Portfolio/Portfolio-Presentation.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/Portfolio/Portfolio-Presentation.png" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Portfolio</h5>
                                 <a href="Projets.php?id=Portfolio" class="btn btn-secondary">Voir plus</a>
@@ -392,7 +392,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="col" id="BestStudents">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/Projets/BestStudents/BestStudent-ListeEtudiants.png" class="card-img-top" alt="...">
+                            <img src="images/Projets/BestStudents/BestStudent-ListeEtudiants.png" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Best Students</h5>
                                 <a href="Projets.php?id=BestStudents" class="btn btn-secondary">Voir plus</a>

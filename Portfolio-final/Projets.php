@@ -11,7 +11,7 @@ $tabProjet["BestStudents"] = [
 $tabProjet["Portfolio"] = [
     "titre" => "Portfolio",
     "annee" => "2023-2024",
-    "description" => "Mon portfolio est un projet crée au cours de ma deuxieme année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
+    "description" => "Mon portfolio est un projet créé au cours de ma deuxième année de BTS.<br> Le principe était de réaliser un portfolio, c’est-à-dire un site internet qui présente mon travail et moi.",
     "images" => ["Portfolio-Presentation.png","Portfolio-Passions.png","Portfolio-Contact.png"],
     "publie" => "https://mateo-jean.fr/",
     "logoLanguage" => ["html5","css3","php","javascript","bootstrap"]
@@ -19,7 +19,7 @@ $tabProjet["Portfolio"] = [
 $tabProjet["Projet-cinema"] = [
     "titre" => "Projet cinéma",
     "annee" => "2023-2024",
-    "description" => "BestStudents est un projet crée au cours de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
+    "description" => "Projet cinéma est un projet créé au cours de ma deuxième année de BTS. <br> <br> Le principe était de faire une API relier à une base de données qui permet de lister des films, réserver des séances, se connecter, créer un compte, ext. <br> <br> Ensuite il a fallu créer un site web qui permet de consommer cette API, afin de proposer aux utilisateurs les fonctionnalités.",
     "images" => ["ProjetEnCours.png"],
     "publie" => false,
     "logoLanguage" => ["html5","css3","php","bootstrap","mysql","symfony"]
@@ -27,7 +27,7 @@ $tabProjet["Projet-cinema"] = [
 $tabProjet["Statistique-caisse"] = [
     "titre" => "Statistique caisse",
     "annee" => "2023-2024",
-    "description" => "Lors de ma deuxieme année de BTS-SIO, j'ai réaliser un projets de statistique de caisse. <br> Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
+    "description" => "Lors de ma deuxième année de BTS-SIO en alternance, j'ai réalisé un projet de statistique de caisse. <br> Le principe était de faire des statistiques sur les ventes des magasins (CA, Panier moyen, CA par vendeurs ...). Ces statistiques sont utilisées par les gérants de magasin.",
     "images" => ["Statistique-caisse-CA.png","Statistique-caisse-poids-moyen.png","Statistique-caisse-preference.png"],
     "publie" => false,
     "logoLanguage" => ["windev","hfsql"]
@@ -151,7 +151,7 @@ if (!empty($_GET["id"])) {
             <!-- Projets publier-->
             <?php
             if ($tabProjet[$id]["publie"] != false) { ?>
-                <a class="LienProjets" href="<?=$tabProjet[$id]["publie"]?>">Lien du projets</a>
+                <a class="LienProjets" href="<?=$tabProjet[$id]["publie"]?>">Lien du projet</a>
             <?php } else { ?>
                 <h5>Projets non publier</h5>
             <?php } ?>

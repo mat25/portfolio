@@ -309,6 +309,7 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     width: 90%;
     margin: 0 auto 0 auto;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 .fleche-gauche {
     position: absolute;
