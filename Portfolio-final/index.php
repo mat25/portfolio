@@ -1,5 +1,11 @@
 <?php
 
+$nom = "";
+$prenom = "";
+$email = "";
+$objet = "";
+$message = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $erreurs = [];
 
@@ -34,16 +40,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($erreurs)) {
-        $email = "mateojean25660@gmail.com";
+        $emailClient = $email;
+        $email = "contact@mateo-jean.fr";
 
-        $content = "De $prenom $nom \nEmail: $email \nMessage: $message";
+        $content = "De: $prenom $nom \nEmail: $emailClient \nMessage: $message";
         $mailClient = "From: $email \r\n";
         mail($email, "Portfolio : ".$objet, $content, $mailClient) or die($erreurs["EnvoieMail"] = "Erreur lors de l'envoie du mail");
 
         // Si pas d'erreur
         if (empty($erreurs)) {
             header("Location: index.php");
-
         }
     }
 
@@ -72,6 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <header class="header">
         <div class="main_container_header">
             <div class="header__logo">
@@ -138,9 +145,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="presentation">
                                 <h1>Présentation</h1>
                                 <div class="texte">
-                                    <p>Je m'appelle Matéo j'ai 19 ans et je suis actuellement étudiant en 2eme années BTS SIO à Besançon. Passionné, par les nouvelles technologies depuis longtemps j'aimerais bien devenir développeur.</p>
-                                    <p>Ce portfolio a pour but de vous présenter mes différents projets que j'ai pu réaliser, mais également mes certifications ou encore mon CV.</p>
-                                    <p>Si vous avez une question ou si vous avez simplement besoin d'un renseignement, vous pouvez me contacter en cliquant ici.</p>
+                                    <p>Je m'appelle Matéo, j'ai 19 ans et je suis actuellement étudiant en deuxième année de BTS SIO à Besançon. Passionné par les nouvelles technologies depuis longtemps, j'aimerais devenir développeur.</p>
+                                    <p>Ce portfolio a pour objectif de vous présenter mes différents projets réalisés, ainsi que mes certifications et mon CV.</p>
+                                    <p>Si vous avez des questions ou si vous avez simplement besoin de renseignements, vous pouvez me contacter en cliquant <a href="index.php#contact">ici</a>.</p>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +164,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <img src="images/vtt.jpg" alt="Image Vélo">
                                 </div>
                                 <div class="sportsMecanique">
-                                    <h3>Sports Mécanique</h3>
+                                    <h3>Sports Mécaniques</h3>
                                     <img src="images/FabioQuartararo.jpg" alt="Image Moto">
                                     <img src="images/WRC-fourmaux.jpg" alt="Image WRC">
                                 </div>
@@ -181,9 +188,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="presentation">
                         <h1>Présentation</h1>
                         <div class="texte">
-                            <p>Je m'appelle Matéo j'ai 19 ans et je suis actuellement étudiant en 2eme années BTS SIO à Besançon. Passionné, par les nouvelles technologies depuis longtemps j'aimerais bien devenir développeur.</p>
-                            <p>Ce portfolio a pour but de vous présenter mes différents projets que j'ai pu réaliser, mais également mes certifications ou encore mon CV.</p>
-                            <p>Si vous avez une question ou si vous avez simplement besoin d'un renseignement, vous pouvez me contacter en cliquant ici.</p>
+                            <p>Je m'appelle Matéo, j'ai 19 ans et je suis actuellement étudiant en deuxième année de BTS SIO à Besançon. Passionné par les nouvelles technologies depuis longtemps, j'aimerais devenir développeur.</p>
+                            <p>Ce portfolio a pour objectif de vous présenter mes différents projets réalisés, ainsi que mes certifications et mon CV.</p>
+                            <p>Si vous avez des questions ou si vous avez simplement besoin de renseignements, vous pouvez me contacter en cliquant <a href="index.php#contact">ici</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -196,7 +203,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <img class="w-100" src="images/vtt.jpg" alt="Image Vélo">
                         </div>
                         <div class=" col col-12 col-md-6 mt-md-0 mt-3">
-                            <h3 class="text-center">Sports Mécanique</h3>
+                            <h3 class="text-center">Sports Mécaniques</h3>
                             <img class="w-100" src="images/FabioQuartararo.jpg" alt="Image Moto">
                             <img class="w-100" src="images/WRC-fourmaux.jpg" alt="Image WRC">
                         </div>
@@ -238,7 +245,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="competenceProfessionnel">
                             <h3>Compétences</h3>
                             <div class="competence">
-                                <h4 class="mt-4">Compétences</h4>
+                                <h4 class="mt-4">Qualités</h4>
                                 <ul>
                                     <li>Organisé</li>
                                     <li>Esprit d'équipe</li>
@@ -416,25 +423,60 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <form class="col col-12 col-xl-8" method="post">
                         <div class="row">
                             <div class="col col-12 col-xl-6">
+                                <?php
+                                // Enleve le nom
+                                if (!empty($erreurs["nom"])) {
+                                    $nom = "";
+                                } ?>
                                 <label for="inputNom" class="text d-block">Nom</label>
-                                <input type="text" class="w-100 mb-4 px-1" id="inputNom" name="nom">
+                                <input type="text" class="w-100 px-1" id="inputNom" name="nom" value="<?= $nom?>">
                                 <?php if (!empty($erreurs["nom"])) { ?>
-                                    <p>Erreur</p>
+                                    <p class="erreur"><?= $erreurs["nom"]?></p>
                                 <?php } ?>
                             </div>
                             <div class="col col-12 col-xl-6">
+                                <?php
+                                if (!empty($erreurs["prenom"])) {
+                                    $prenom = "";
+                                } ?>
                                 <label for="inputPrenom" class="block">Prénom</label>
-                                <input type="text" class="w-100 mb-4 px-1" id="inputPrenom" name="prenom">
+                                <input type="text" class="w-100 px-1" id="inputPrenom" name="prenom" value="<?= $prenom?>">
+                                <?php if (!empty($erreurs["prenom"])) { ?>
+                                    <p class="erreur"><?= $erreurs["prenom"]?></p>
+                                <?php } ?>
                             </div>
                         </div>
-                        <label for="inputEmail" class="block">Email</label>
-                        <input type="text" class="w-100 mb-4 px-1" id="inputEmail" name="email">
+                        <?php
+                        if (!empty($erreurs["email"])) {
+                            $email = "";
+                        } ?>
+                        <label for="inputEmail" class="block mt-4">Email</label>
+                        <input type="text" class="w-100 px-1" id="inputEmail" name="email" value="<?= $email?>">
+                        <?php if (!empty($erreurs["email"])) { ?>
+                            <p class="erreur"><?= $erreurs["email"]?></p>
+                        <?php } ?>
 
-                        <label for="inputObjet" class="block">Objet</label>
-                        <input type="text" class="w-100 mb-4 px-1" id="inputObjet" name="objet">
+                        <?php
+                        // Enleve le nom
+                        if (!empty($erreurs["objet"])) {
+                            $objet = "";
+                        } ?>
+                        <label for="inputObjet" class="block mt-4">Objet</label>
+                        <input type="text" class="w-100 px-1" id="inputObjet" name="objet" value="<?= $objet?>">
+                        <?php if (!empty($erreurs["objet"])) { ?>
+                            <p class="erreur"><?= $erreurs["objet"]?></p>
+                        <?php } ?>
 
-                        <label for="inputMessage" class="block">Message</label>
-                        <textarea type="text" class="w-100 px-1" id="inputMessage" rows="5" name="message"></textarea>
+                        <?php
+                        // Enleve le nom
+                        if (!empty($erreurs["message"])) {
+                            $message = "";
+                        } ?>
+                        <label for="inputMessage" class="block mt-4">Message</label>
+                        <textarea type="text" class="w-100 px-1" id="inputMessage" rows="5" name="message" content="<?= $message?>"></textarea>
+                        <?php if (!empty($erreurs["message"])) { ?>
+                            <p class="erreur"><?= $erreurs["message"]?></p>
+                        <?php } ?>
 
                         <div class="divbouton w-100 d-flex justify-content-center">
                             <button type="submit" class="btn btn-secondary mt-3 w-25" id="envoyer">Envoyer</button>
