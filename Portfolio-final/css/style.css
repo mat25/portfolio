@@ -44,7 +44,7 @@ h1 {
 }
 
 
-/* Annimation logo navigation*/
+/* Annimation logo terminal*/
 svg .blinkit {animation: col 1.5s linear infinite;}
 @keyframes col {
     0%,2% {fill:none}
@@ -179,14 +179,12 @@ svg .blinkit {animation: col 1.5s linear infinite;}
 .erreur {
     color: lightskyblue;
 }
-.contact form label  {
-    color: #999;
-    font-family: IBM Plex Mono, monospace;
-}
 .contact form {
     outline:  none;
 }
 .contact form label  {
+    color: #999;
+    font-family: IBM Plex Mono, monospace;
     font-weight: bold;
 }
 
@@ -346,6 +344,9 @@ svg .blinkit {animation: col 1.5s linear infinite;}
     color: white;
 }
 
+.disable-smooth-scroll {
+    scroll-behavior: auto !important; /* Désactivation du défilement fluide */
+}
 
 @media screen and (max-width: 1200px) {
 

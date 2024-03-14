@@ -5,6 +5,7 @@ $prenom = "";
 $email = "";
 $objet = "";
 $message = "";
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $erreurs = [];
@@ -24,7 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["email"])) {
         $erreurs["email"] = "L'email est obligatoire !";
     } else {
-        $email = $_POST["email"];
+        if (!filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)) {
+            $erreurs["email"] = "Le format de l'adresse mail est invalide (test@test.fr) !";
+        } else {
+            $email = $_POST["email"];
+        }
     }
 
     if (empty($_POST["objet"])) {
@@ -49,7 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Si pas d'erreur
         if (empty($erreurs)) {
+            $_SESSION['success'] = true;
             header("Location: index.php");
+            exit();
         }
     }
 
@@ -77,6 +84,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Matéo JEAN</title>
 </head>
 <body>
+    <?php
+    if (!empty($_SESSION["success"])) {
+        unset($_SESSION["success"]);
+        ?>
+        <script type="text/javascript">window.alert("Votre message a bien été envoyé !");</script>
+    <?php } ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <header class="header">
@@ -126,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div id="fullpage">
         <div class="section placeNav" >
             <div class="accueil">
-                <h1>Matéo JEAN <br> Développeur Back-End</h1>
+                <h1 data-aos="fade-up" >Matéo JEAN <br> Développeur Back-End</h1>
                 <a href="#presentation"class="fleche-accueil" id="flecheScroll">
                     <i class="fa-solid fa-arrow-down fa-bounce fa-2xl" style="color: #ffffff;"></i>
                 </a>
@@ -473,7 +486,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $message = "";
                         } ?>
                         <label for="inputMessage" class="block mt-4">Message</label>
-                        <textarea type="text" class="w-100 px-1" id="inputMessage" rows="5" name="message" content="<?= $message?>"></textarea>
+                        <textarea type="text" class="w-100 px-1" id="inputMessage" rows="5" name="message"><?= $message?></textarea>
                         <?php if (!empty($erreurs["message"])) { ?>
                             <p class="erreur"><?= $erreurs["message"]?></p>
                         <?php } ?>
@@ -529,7 +542,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!--  Script qui permet d'avoir les annimation avec le full Page  -->
     <script src="js/fullpagejs.js"></script>
-
 
     <script>
         // Sélectionnez tous les boutons d'accordéon
