@@ -272,6 +272,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <li>MySQL, SQL Server, HFSQL</li>
                                 <li>WINDEV</li>
                             </ul>
+                            <h3>Certifications</h3>
+                            <a href="">CNIL</a>
+                            <a href="">ANSSI</a>
+                            <a href="">PIX</a>
                         </div>
                     </div>
                     <div class="col col-12 col-xl-5">
