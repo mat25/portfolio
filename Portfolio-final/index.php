@@ -448,7 +448,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <div class="section placeNav" >
-            <div class="veilleTechno">
+            <div class="veilleTechnologique">
                 <h1>Veille technologique</h1>
                 <p>La veille informatique se caractérise par un processus de collecte, d’analyse
                     et de diffusion des informations relatives à un domaine technologique spécifique.</p>
