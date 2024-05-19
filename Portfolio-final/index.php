@@ -272,6 +272,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <li>MySQL, SQL Server, HFSQL</li>
                                 <li>WINDEV</li>
                             </ul>
+                            <h3>Certifications</h3>
+                            <ul>
+                                <li>
+                                    <a href="pdf/Attestation-pix-Matéo-JEAN.pdf" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                    </svg> PIX </a>
+                                </li>
+                                <li>
+                                    <a href="pdf/Attestation-CNIL-Matéo-Jean.pdf" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                    </svg> CNIL </a>
+                                </li>
+                                <li>
+                                    <a href="pdf/Attestation-anssi-Matéo-Jean.pdf" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                    </svg> ANSSI </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col col-12 col-xl-5">
@@ -441,9 +465,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <div class="section placeNav" >
-            <div class="veilleTechno">
+            <div class="veilleTechnologique">
                 <h1>Veille technologique</h1>
-                <p>En construction </p>
+                <p>La veille informatique se caractérise par un processus de collecte, d’analyse
+                    et de diffusion des informations relatives à un domaine technologique spécifique.</p>
+                <p class="mt-4">Faire une veille technologique est essentiel. Surveiller, se tenir informé des
+                    dernières innovations permet de déployer ses compétences.</p>
+                <p class="mt-4">Pour réaliser cette veille, j'ai utilisé des outils qui facilitent la tâche, tels qu'un agrégateur de contenu comme Feedly ainsi
+                    que des flux RSS. Les flux RSS, désignant des fichiers texte au format XML, permettent de repérer les modifications de contenu d'un site web.</p>
+                <p class="mt-4">Je m'intéresse à tous les sujets liés à l'informatique, mais j'ai réalisé un document décrivant plus précisément ma façon de procéder sur
+                    le sujet de l'accessibilité de l'informatique pour les personnes handicapées.</p>
+                <div class="Bbouton d-flex justify-content-center mt-4">
+                    <a href="pdf/Document%20Veille%20technologique.pdf" class="btn btn-secondary" target="_blank">Télécharger le document</a>
+                </div>
             </div>
         </div>
         <div class="section placeNav">
