@@ -2,7 +2,7 @@
 $tabProjet = [];
 $tabProjet["BestStudents"] = [
         "titre" => "Best Students",
-        "annee" => "2022",
+        "annee" => "2023",
         "description" => "BestStudents est un projet créé au cours de ma première année de BTS. <br>Le principe était de créer une base de données répertoriant des élèves. Nous pouvions y rechercher les élèves par classe ou encore soumettre des demandes via un formulaire, qui sont ensuite gérés par un administrateur.",
         "images" => ["BestStudent-ListeEtudiants.png","BestStudent-AjoutEtudiant.png","BestStudent-Contact.png","BestStudent-DetailEtudiant.png"],
         "publie" => false,
@@ -16,17 +16,32 @@ $tabProjet["Portfolio"] = [
     "publie" => "https://mateo-jean.fr/",
     "logoLanguage" => ["html5","css3","php","javascript","bootstrap"]
 ];
+$tabProjet["Suivi-anydesk"] = [
+    "titre" => "Suivi des sessions AnyDesk",
+    "annee" => "2023",
+    "description" => "Lors de ma deuxième année de BTS-SIO en alternance, j'ai réalisé un projet de suivi des sessions AnyDesk.<br> <br>L'objectif était de suivre les sessions AnyDesk internes de mon entreprise. Cela impliquait de récupérer l'historique des sessions ainsi que le nombre de sessions en temps réel. <br> <br> Ces données sont utilisées pour établir un référentiel du temps passé par chaque collaborateur chez les clients, simplifiant ainsi le processus de facturation. De plus, cela permet d'adapter l'offre AnyDesk en fonction du nombre de sessions simultanées.",
+    "images" => ["Statistique-anydesk-historique-des-connexions.png","Statistique-anydesk-Stats-sessoin.png"],
+    "publie" => false,
+    "logoLanguage" => ["windev","hfsql","AnyDesk-Logo"]
+];
 $tabProjet["Projet-cinema"] = [
     "titre" => "Projet cinéma",
-    "annee" => "2023-2024",
+    "annee" => "2024",
     "description" => "Projet cinéma est un projet créé au cours de ma deuxième année de BTS. <br> <br> Le principe était de faire une API relier à une base de données qui permet de lister des films, réserver des séances, se connecter, créer un compte, ext. <br> <br> Ensuite il a fallu créer un site web qui permet d'utiliser cette API, afin de proposer aux utilisateurs les fonctionnalités.",
-    "images" => ["ProjetEnCours.png"],
+    "images" => ["accueil.png","details.png","inscription.png"],
     "publie" => false,
     "logoLanguage" => ["html5","css3","php","bootstrap","mysql","symfony"]
+];$tabProjet["Projet-bibliotheque"] = [
+    "titre" => "Projet bibliothèque",
+    "annee" => "2023",
+    "description" => "Projet Bibliothèque est un projet créé au cours de ma deuxième année de BTS. <br> <br> Le principe était de développer le backend d’un système de gestion de bibliothèque permettant de créer un adhérent, de créer un média (livre, magazine, Blu-ray), d’emprunter un média, de lister les nouveaux médias, etc. <br> <br> Ce projet comprend une interface web pour la création d'un utilisateur et une interface en ligne de commande pour les autres fonctionnalités. ",
+    "images" => ["creer-adherent.png","lister-nouveaux-media.jpg","emprunter-un-media.jpg"],
+    "publie" => false,
+    "logoLanguage" => ["html5","css3","php","mysql"]
 ];
 $tabProjet["Statistique-caisse"] = [
     "titre" => "Statistique caisse",
-    "annee" => "2023-2024",
+    "annee" => "2024",
     "description" => "Lors de ma deuxième année de BTS-SIO en alternance, j'ai réalisé un projet de statistique de caisse. <br> Le principe était de faire des statistiques sur les ventes des magasins (CA, Panier moyen, CA par vendeurs ...). Ces statistiques sont utilisées par les gérants de magasin.",
     "images" => ["Statistique-caisse-CA.png","Statistique-caisse-poids-moyen.png","Statistique-caisse-preference.png"],
     "publie" => false,

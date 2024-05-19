@@ -385,10 +385,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="row">
                     <div class="col" id="Projet-cinema">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/Projets/Projet-cinema/ProjetEnCours.png" class="card-img-top" alt="">
+                            <img src="images/Projets/Projet-cinema/accueil.png" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Projet cinéma</h5>
                                 <a href="Projets.php?id=Projet-cinema" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div><div class="col" id="Projet-bibliotheque">
+                        <div class="card my-3 mx-auto" style="width: 18rem;">
+                            <img src="images/Projets/Projet-bibliotheque/creer-adherent.png" class="card-img-top" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Projet bibliothèque</h5>
+                                <a href="Projets.php?id=Projet-bibliotheque" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
@@ -401,12 +409,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                         </div>
                     </div>
-                    <div class="col" id="Portfolio">
+<!--                    <div class="col" id="Portfolio">-->
+<!--                        <div class="card my-3 mx-auto" style="width: 18rem;">-->
+<!--                            <img src="images/Projets/Portfolio/Portfolio-Presentation.png" class="card-img-top" alt="">-->
+<!--                            <div class="card-body text-center">-->
+<!--                                <h5 class="card-title">Portfolio</h5>-->
+<!--                                <a href="Projets.php?id=Portfolio" class="btn btn-secondary">Voir plus</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <div class="col" id="Suivi-anydesk">
                         <div class="card my-3 mx-auto" style="width: 18rem;">
-                            <img src="images/Projets/Portfolio/Portfolio-Presentation.png" class="card-img-top" alt="">
+                            <img src="images/Projets/Suivi-anydesk/Statistique-anydesk-historique-des-connexions.png" class="card-img-top" alt="">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Portfolio</h5>
-                                <a href="Projets.php?id=Portfolio" class="btn btn-secondary">Voir plus</a>
+                                <h5 class="card-title">Suivi des sessions AnyDesk</h5>
+                                <a href="Projets.php?id=Suivi-anydesk" class="btn btn-secondary">Voir plus</a>
                             </div>
                         </div>
                     </div>
