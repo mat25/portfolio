@@ -378,7 +378,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <div class="accordion-body">
                                         <p class="fw-bold">2022</p>
                                         <ul>
-                                            <li>Spécialité mathématique et NSI (Numérique et Sciences Informatiques)</li>
+                                            <li>Spécialités mathématiques et NSI (Numérique et Sciences Informatiques)</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -472,7 +472,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p class="mt-4">Faire une veille technologique est essentiel. Surveiller, se tenir informé des
                     dernières innovations permet de déployer ses compétences.</p>
                 <p class="mt-4">Pour réaliser cette veille, j'ai utilisé des outils qui facilitent la tâche, tels qu'un agrégateur de contenu comme Feedly ainsi
-                    que des flux RSS. Les flux RSS, désignant des fichiers texte au format XML, permettent de repérer les modifications de contenu d'un site web.</p>
+                    que des flux RSS. Les flux RSS, désignent des fichiers texte au format XML, permettent de repérer les modifications de contenu d'un site web.</p>
                 <p class="mt-4">Je m'intéresse à tous les sujets liés à l'informatique, mais j'ai réalisé un document décrivant plus précisément ma façon de procéder sur
                     le sujet de l'accessibilité de l'informatique pour les personnes handicapées.</p>
                 <div class="Bbouton d-flex justify-content-center mt-4">

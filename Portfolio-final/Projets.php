@@ -3,7 +3,7 @@ $tabProjet = [];
 $tabProjet["BestStudents"] = [
         "titre" => "Best Students",
         "annee" => "2023",
-        "description" => "BestStudents est un projet créé au cours de ma première année de BTS. <br>Le principe était de créer une base de données répertoriant des élèves. Nous pouvions y rechercher les élèves par classe ou encore soumettre des demandes via un formulaire, qui sont ensuite gérés par un administrateur.",
+        "description" => "BestStudents est un projet créé au cours de ma première année de BTS. <br>Le principe était de créer une base de données répertoriant des élèves. Nous pouvions y rechercher les élèves par classe ou encore soumettre des demandes via un formulaire, qui sont ensuite gérées par un administrateur.",
         "images" => ["BestStudent-ListeEtudiants.png","BestStudent-AjoutEtudiant.png","BestStudent-Contact.png","BestStudent-DetailEtudiant.png"],
         "publie" => false,
         "logoLanguage" => ["html5","css3","php","mysql"]
@@ -27,7 +27,7 @@ $tabProjet["Suivi-anydesk"] = [
 $tabProjet["Projet-cinema"] = [
     "titre" => "Projet cinéma",
     "annee" => "2024",
-    "description" => "Projet cinéma est un projet créé au cours de ma deuxième année de BTS. <br> <br> Le principe était de faire une API relier à une base de données qui permet de lister des films, réserver des séances, se connecter, créer un compte, ext. <br> <br> Ensuite il a fallu créer un site web qui permet d'utiliser cette API, afin de proposer aux utilisateurs les fonctionnalités.",
+    "description" => "Projet cinéma est un projet créé au cours de ma deuxième année de BTS. <br> <br> Le principe était de faire une API reliée à une base de données qui permet de lister des films, réserver des séances, se connecter, créer un compte, ext. <br> <br> Ensuite il a fallu créer un site web qui permet d'utiliser cette API, afin de proposer aux utilisateurs les fonctionnalités.",
     "images" => ["accueil.png","details.png","inscription.png"],
     "publie" => false,
     "logoLanguage" => ["html5","css3","php","bootstrap","mysql","symfony"]
@@ -42,7 +42,7 @@ $tabProjet["Projet-cinema"] = [
 $tabProjet["Statistique-caisse"] = [
     "titre" => "Statistique caisse",
     "annee" => "2024",
-    "description" => "Lors de ma deuxième année de BTS-SIO en alternance, j'ai réalisé un projet de statistique de caisse. <br> Le principe était de faire des statistiques sur les ventes des magasins (CA, Panier moyen, CA par vendeurs ...). Ces statistiques sont utilisées par les gérants de magasin.",
+    "description" => "Lors de ma deuxième année de BTS-SIO en alternance, j'ai réalisé un projet de statistiques de caisse. <br> Le principe était de faire des statistiques sur les ventes des magasins (CA, Panier moyen, CA par vendeurs ...). Ces statistiques sont utilisées par les gérants de magasin.",
     "images" => ["Statistique-caisse-CA.png","Statistique-caisse-poids-moyen.png","Statistique-caisse-preference.png"],
     "publie" => false,
     "logoLanguage" => ["windev","hfsql"]
@@ -158,7 +158,7 @@ if (!empty($_GET["id"])) {
         <div class="col col-12 col-xl-5 order-1 order-xl-0 d-flex flex-column flex justify-content-center colonneDivCarrousel">
 
             <!-- Date -->
-            <h4 class="mb-3">Projets réaliser en <?= $tabProjet[$id]["annee"]?></h4>
+            <h4 class="mb-3">Projet réalisé en <?= $tabProjet[$id]["annee"]?></h4>
 
             <!-- Description -->
             <p class="pDetailsProjets"><?= $tabProjet[$id]["description"]?></p>
@@ -168,12 +168,12 @@ if (!empty($_GET["id"])) {
             if ($tabProjet[$id]["publie"] != false) { ?>
                 <a class="LienProjets" href="<?=$tabProjet[$id]["publie"]?>">Lien du projet</a>
             <?php } else { ?>
-                <h5>Projets non publier</h5>
+                <h5>Projet non publié</h5>
             <?php } ?>
 
             <!-- Logo langage utilisé -->
             <div class="row">
-                <h4 class="text-center mt-4 mb-3">Technologie utilisé :</h4>
+                <h4 class="text-center mt-4 mb-3">Technologies utilisées :</h4>
                 <?php
                 foreach ($tabProjet[$id]["logoLanguage"] as $image) {?>
                     <div class="col d-flex justify-content-center">
