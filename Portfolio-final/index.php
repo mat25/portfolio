@@ -320,7 +320,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#koredge" aria-expanded="false" aria-controls="koredge">
-                                        Koregde
+                                        Koredge
                                     </button>
                                 </h2>
                                 <div id="koredge" class="accordion-collapse collapse" data-bs-parent="#accordionCompetenceInfo">
