@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0a0a0f"/>
+  <path d="M12 44L28 32L12 20" stroke="#6c63ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="32" y1="44" x2="52" y2="44" stroke="#a855f7" stroke-width="5" stroke-linecap="round">
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+  </line>
+</svg>
